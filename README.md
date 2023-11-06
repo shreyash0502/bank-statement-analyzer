@@ -50,5 +50,5 @@ py driver.py
 ### Explanation of the code structure:
 
 * The process_email() function gets called as soon as the '/process_email' API is hit. This function takes care of establishing connection with Gmail, parsing the emails having subject "Bank statement", downloading and saving the attached PDFs. This function returns the list of senders corresponding to the parsed emails, which is then displayed to the front end as seen in the above attached images.
-* The process_email() funtion also calls download_attachment() function to download and save the PDFs attached with the retrieved emails based on subject "Bank statement".
+* The process_email() funtion makes use of a helper function download_attachment() to download and save the PDFs attached with the retrieved emails based on subject "Bank statement".
 * When the user requests for transactions from a particular sender by hitting '/process_email/<int:index>', the extract_transactions_from_pdf() function gets called which makes use of a helper function extract_text_from_pdf() to extract and return the opening balance and all the transactions in the form of a python dictionary.
