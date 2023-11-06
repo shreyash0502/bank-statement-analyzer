@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Senders</title>
+</head>
+<body>
+    <h1>Email Senders</h1>
+    <ul>
+        {% for index, sender in senders %}
+            <li>
+                <a href="{{ url_for('sender_details', index=index) }}">{{ sender }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
