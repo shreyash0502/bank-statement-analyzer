@@ -2,7 +2,7 @@
 > Analyze your bank statements received through Gmail!
 
 ### What is this app for?
-The app can access the user's Gmail account, read the emails containing bank statements, analyze those bank statements, and extract the transactions present in that particular bank statement.
+The app can access the user's gmail account, parse the emails containing bank statements, analyze those bank statements, and extract the transactions present in those bank statements.
 
 ### Step-by-step guide to run this application:
 
