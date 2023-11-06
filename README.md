@@ -1,6 +1,9 @@
 # Welcome to Bank Statement Analyzer - Made by _Shreyash Vaish_
 > Analyze your bank statements received through Gmail!
 
+### What is this app for?
+The app can access the user's Gmail account, read the emails containing bank statements, analyze those bank statements, and extract the transactions present in that particular bank statement.
+
 ### Step-by-step guide to run this application:
 
 1. Start by cloning the repo in your system using CMD:
@@ -32,3 +35,13 @@ Now that the initial setup is done, we need to set-up some emails that match our
 ```
 py driver.py
 ```
+
+### APIs Description:
+1. ('/', method = 'GET') - Takes the user to the homepage where they can find the button to process the emails.
+![image](https://github.com/shreyash0502/bank-statement-analyzer/assets/56553419/fce83a23-f019-4140-8c7e-0e02fdbf6d81)
+
+2. ('/process_email', method = 'GET') - Parse the emails of the user, find mails with subject "Bank statement" and download the PDFs. The page also contains the buttons to take the user to the processed transactions.
+![image](https://github.com/shreyash0502/bank-statement-analyzer/assets/56553419/896d162c-f386-41e8-bb02-fb071d351645)
+
+3. ('/process_email/<int:index>', method = 'GET') - Displays the transactions extracted from the bank statement corresponding to a particular PDF represented by index.
+![image](https://github.com/shreyash0502/bank-statement-analyzer/assets/56553419/d7e2de36-3fac-4c6b-8410-acb458576cdb)
