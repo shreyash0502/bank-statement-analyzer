@@ -24,6 +24,7 @@ The following steps are needed to connect and parse emails received through Gmai
 7. Download the credentials as 'cred.json' and save them in the root directory.
 
 Now that the initial setup is done, we need to set-up some emails that match our requirements:
+
 8. Visit https://templatelab.com/bank-statement/ and choose the first template. Generate two or three bank statements using this template by filling some numbers and dates.
 9. Send these bank statements to your personal Gmail ID. Sender Ids should be unique (can be same as well, unique preferred). Each email should necessarily have "Bank statement" in Subject line.
 ![image](https://github.com/shreyash0502/bank-statement-analyzer/assets/56553419/73230316-b207-4267-a4c3-8be1c3683307)
