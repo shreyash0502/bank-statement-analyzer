@@ -45,3 +45,10 @@ py driver.py
 
 3. ('/process_email/<int:index>', method = 'GET') - Displays the transactions extracted from the bank statement corresponding to a particular PDF represented by index.
 ![image](https://github.com/shreyash0502/bank-statement-analyzer/assets/56553419/d7e2de36-3fac-4c6b-8410-acb458576cdb)
+
+
+### Explanation of the code structure:
+
+* The process_email() function gets called as soon as the '/process_email' API is hit. This function takes care of establishing connection with Gmail, parsing the emails having subject "Bank statement", downloading and saving the attached PDFs. This function returns the list of senders corresponding to the parsed emails, which is then displayed to the front end as seen in the above attached images.
+* The process_email() funtion also calls download_attachment() function to download and save the PDFs attached with the retrieved emails based on subject "Bank statement".
+* When the user requests for transactions from a particular sender by hitting '/process_email/<int:index>', the extract_transactions_from_pdf() function gets called which makes use of a helper function extract_text_from_pdf() to extract and return the opening balance and all the transactions in the form of a python dictionary.
