@@ -41,7 +41,7 @@ py driver.py
 ![image](https://github.com/shreyash0502/bank-statement-analyzer/assets/56553419/fce83a23-f019-4140-8c7e-0e02fdbf6d81)
 
 2. ('/process_email', method = 'GET') - Parse the emails of the user, find mails with subject "Bank statement" and download the PDFs. The page also contains the buttons to take the user to the processed transactions.
-![image](https://github.com/shreyash0502/bank-statement-analyzer/assets/56553419/896d162c-f386-41e8-bb02-fb071d351645)
+![image](https://github.com/shreyash0502/bank-statement-analyzer/assets/56553419/427a7465-2e2f-4bab-b17a-433137fbd1f1)
 
 3. ('/process_email/<int:index>', method = 'GET') - Displays the transactions extracted from the bank statement corresponding to a particular PDF represented by index.
 ![image](https://github.com/shreyash0502/bank-statement-analyzer/assets/56553419/d7e2de36-3fac-4c6b-8410-acb458576cdb)
